@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>About The Spam Catcher</h1>
+    <h4>Aya Aloraimi- C00212086</h4>
+    <p>
+        Recently, spam has become one of the most global Internet problems. Therefore, programmers develop various software programs to protect individuals from receiving spam emails. This paper describes features of program which will be developed to reduce the amount of spam emails received in a mailbox. Also it defines the core functions of this program clearly in a context diagram. Moreover, providing details about the program’s metrics including full FURPS for classifying program quality attributes such as Functionality, Usability, Reliability, Performance and Supportability. In addition, precise requirements will be identified in this paper such as libraries and tools needed for the program.
+    </p>
+    <p>
+        The aim of this project is to create a spam filter system which will decrease spam emails, using Naïve Bayes classifier that is based on applying Bayes’ theorem and works on keyword context . The keyword context is created by mapping an existing keyword (word that need to calculate the probability of being spam) to set of related words.
+    </p>
+    <p>
+        Specifications classifications is an important step before any project is developed. The functional specifications is a structured guide used for software developers to explain the planned functionality, design and user experience on a system in detail. The performance attribute of a software system is specified by non-functional specifications. Basically, they  are a set of standards used to determine a system’s basic operation. The following functional and non-functional specifications are defined after reading all the articles and papers that clarify information about email spam, its forms and methods to mitigate it.
+    </p>
+    <p>
+        Classification Report
+        <br>
+        <img src="{{url_for('static', filename='imgs/img1.png')}}">
+    </p>
+    <p>
+        Confusion Matrix
+        <br>
+        <img src="{{url_for('static', filename='imgs/img2.png')}}">
+    </p>
+    <p>
+        ROC Curves
+        <br>
+        <img src="{{url_for('static', filename='imgs/img3.png')}}">
+    </p>
+{% endblock content %}

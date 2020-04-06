@@ -1,0 +1,10 @@
+alter table post add column gaussian_naive_bayes_value FLOAT(100) DEFAULT 0.0 ;
+alter table post add column Logistic_Regression FLOAT(100) DEFAULT 0.0 ;
+alter table post add column Decision_Tree_Classification FLOAT(100) DEFAULT 0.0 ;
+alter table post add column Gradient_Boosting_Classification FLOAT(100) DEFAULT 0.0 ;
+alter table post add column Ada_Boosting_Classification FLOAT(100) DEFAULT 0.0 ;
+alter table post add column Extra_Tree_Classification FLOAT(100) DEFAULT 0.0 ;
+alter table post add column K_Neighbors_Classification FLOAT(100) DEFAULT 0.0 ;
+alter table post add column Support_Vector_Classification FLOAT(100) DEFAULT 0.0 ;
+alter table post add column spam_or_ham VARCHAR(20) DEFAULT 'Not A Spam' ;
+PRAGMA table_info(post) ;
